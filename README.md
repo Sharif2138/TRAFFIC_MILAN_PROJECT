@@ -35,7 +35,9 @@ To keep the comparison fair, the same preprocessing pipeline was used across all
 ├── Task3_forecasting.ipynb
 ├── task2_eda.ipynb
 ├── scripts
-├── processed_dataset
+├── raw_dataset
+├── milan_final.parquet
+├── processed_data
 ├── README.md
 └── requirements.txt
 ```
@@ -53,6 +55,10 @@ pip install -r requirements.txt
 ---
 
 ## Running the Project
+
+Download the dataset from Havard dataverse link to your local laptop
+put all files into a raw data folder
+then run the pythin files in the scripts folder to process the files and store them into processed_data folder where they a merged into one file called milan_final.parquet
 
 Run the notebooks in the following order:
 
