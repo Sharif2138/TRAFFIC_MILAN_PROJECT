@@ -23,7 +23,7 @@ Thumbs.db
 
 # Large datasets
 raw_dataset/
-processed_dataset/
+processed_data/
 *.parquet
 
 # Logs
