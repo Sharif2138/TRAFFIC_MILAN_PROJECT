@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 ## Running the Project
 
-Download the dataset from Havard dataverse link to your local laptop
+Download the dataset from Havard dataverse link "[https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EGZHFV](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EGZHFV)" to your local laptop
 put all files into a raw data folder
 then run the pythin files in the scripts folder to process the files and store them into processed_data folder where they a merged into one file called milan_final.parquet
 
