@@ -18,44 +18,6 @@ The main objective was to predict future mobile network traffic and compare how 
 
 ---
 
-## Dataset
-
-Two datasets were used in this project:
-
-1. Telecommunications Activity Dataset
-2. Milan Grid Dataset
-
-For the analysis, only the following fields were used:
-
-- Square ID
-- Time Interval
-- Internet Traffic Activity
-
-The full dataset contains:
-
-- 10,000 geographical areas
-- A 100 × 100 spatial grid
-- 10-minute sampling intervals
-- Two months of observations
-
----
-
-## Key Design Decisions
-
-### Memory Management
-
-The original dataset was too large to load directly into memory, so several strategies were used to make processing manageable.
-
-These included:
-
-- Processing files one at a time
-- Converting CSV files to Parquet format
-- Optimizing data types
-- Removing unused columns
-- Performing intermediate aggregation
-
-These steps reduced memory usage significantly while keeping the information needed for analysis and forecasting.
-
 ### Forecasting Design
 
 After testing different configurations, a lookback window of 24 observations was selected.
@@ -73,6 +35,7 @@ To keep the comparison fair, the same preprocessing pipeline was used across all
 ├── Task3_forecasting.ipynb
 ├── task2_eda.ipynb
 ├── scripts
+├── processed_dataset
 ├── README.md
 └── requirements.txt
 ```
